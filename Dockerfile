@@ -14,7 +14,7 @@ RUN yum -y install wget bind-utils && yum clean all \
     && mkdir -p /opt/zookeeper/{data,log}
 
 WORKDIR /opt/zookeeper
-VOLUME ["/opt/zookeeper/conf", "/opt/zookeeper/data", "/opt/zookeeper/log"]
+VOLUME ["/opt/zookeeper/data", "/opt/zookeeper/log"]
 
 COPY config-and-run.sh ./bin/
 COPY zoo.cfg ./conf/
