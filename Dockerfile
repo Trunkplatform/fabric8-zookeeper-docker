@@ -4,7 +4,7 @@ MAINTAINER iocanel@gmail.com
 
 USER root
 
-ENV ZOOKEEPER_VERSION 3.4.6
+ENV ZOOKEEPER_VERSION 3.4.8
 EXPOSE 2181 2888 3888
 
 RUN yum -y install wget bind-utils && yum clean all \
