@@ -30,6 +30,7 @@ Each container started with both of the above variables will use the following e
     server.N=<container-name-N>:2888:3888
 
 where container-name-X would normally be DOCKERCLOUD_SERVICE_HOSTNAME-<index> with the exception of when that container is the container actually runnig the service, so for 3 containers this is how the generated configuration of the second container will look like:
+
     server.1=zookeeper-1:2888:3888
     server.2=0.0.0.0:2888:3888
     server.3=zookeeper-3:2888:3888
